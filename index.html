@@ -75,55 +75,8 @@ h4{
 
 
 <script defer>
+
 var title = "Form - Quiz For Coders";
-
-var questions = [
-		{
-			question: "How to Print to Console in js?",
-			answer: "console.log()"
-		},
-		{
-			question: "Which Statement is used in js to define function in js?",
-			answer: "function"
-		},
-		{
-			question: "How add item to list in js?",
-			answer: "push()"
-		},
-		{
-			question: "Which element is used to set the title of a webpage? (Give Syntax)",
-			answer: "<title></title>"
-		},
-		{
-			question: "Which Css Function is used to obtain css variables?",
-			answer: "var()"
-		},
-		
-];
-
-const Main = document.querySelector(".Main");
-Main.querySelector(".📌").innerText = title;
-
-questions.forEach(q => {
-   var QuestionDiv = document.createElement("div");
-   QuestionDiv.innerHTML = `
-      <h4>Q: ${q.question}</h4>
-       <br><input placeholder='Answer Here' spellcheck='false' autocomplete='false'><hr><br>
-   `;
-  Main.appendChild(QuestionDiv);
-});
-
-document.querySelectorAll("input").forEach((el, i) => {
-  el.addEventListener("change", () => {
-    console.log(questions[i].answer);
-     if(el.value ===  questions[i].answer){
-       el.style.color = "lightgreen";
-     }else{
-       el.style.color = "red";
-     }
-  });
-});
-</scripvar title = "Form - Quiz For Coders";
 
 var questions = [
 		{
