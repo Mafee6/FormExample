@@ -1,0 +1,169 @@
+<div class="Main">
+  <h2 class="📌"></h2><br>
+</div>
+~Mafee7<br>
+-------------------
+<br><br>
+Just Enter Answers In 
+<br>Textbox<br>
+If Correct: 
+Answer Will <br>Turn Green<br>
+If Wrong: 
+Answer Will<br> Turn
+Red
+<style>
+body{
+	background-color: rgb(34,34,34);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/463/41/105/artistic-vaporwave-outrun-retrowave-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  font-family: sans-serif;
+  text-shadow: 0 0 3vh grey; 
+  color: white;
+}
+.Main {
+  position: absolute;
+  left: 25;
+  right: 25vw;
+  background-color: rgba(150,150,150,0.4);
+  width: 45vw;
+  height: 90vh;
+  backdrop-filter: blur(1vh);
+  border-radius: 1.2vh;
+  box-shadow: 0 0 1vh grey;
+  padding: 4vh;
+}
+.📌{
+  text-align: center;
+  width: 95%;
+  margin: 1vh;
+  text-shadow: 0 0 1vh black;
+  color: orangered;
+  font-size: 1.3em;
+}
+
+input{
+  width: 92%;
+  outline: none;
+  border: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(120,120,120, 1);
+  backdrop-filter: blur(5vh);
+  border-radius: 0.8vh;
+  color: black;
+}
+input:focus{
+  box-shadow: 0 0 1vh grey;
+}
+hr{
+  border: 0.25vh solid rgb(34,34,34);
+  background: rgb(34,34,34);
+  outline: none;
+  border-radius: 2vh;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+
+<script defer>
+var title = "Form - Quiz For Coders";
+
+var questions = [
+		{
+			question: "How to Print to Console in js?",
+			answer: "console.log()"
+		},
+		{
+			question: "Which Statement is used in js to define function in js?",
+			answer: "function"
+		},
+		{
+			question: "How add item to list in js?",
+			answer: "push()"
+		},
+		{
+			question: "Which element is used to set the title of a webpage? (Give Syntax)",
+			answer: "<title></title>"
+		},
+		{
+			question: "Which Css Function is used to obtain css variables?",
+			answer: "var()"
+		},
+		
+];
+
+const Main = document.querySelector(".Main");
+Main.querySelector(".📌").innerText = title;
+
+questions.forEach(q => {
+   var QuestionDiv = document.createElement("div");
+   QuestionDiv.innerHTML = `
+      <h4>Q: ${q.question}</h4>
+       <br><input placeholder='Answer Here' spellcheck='false' autocomplete='false'><hr><br>
+   `;
+  Main.appendChild(QuestionDiv);
+});
+
+document.querySelectorAll("input").forEach((el, i) => {
+  el.addEventListener("change", () => {
+    console.log(questions[i].answer);
+     if(el.value ===  questions[i].answer){
+       el.style.color = "lightgreen";
+     }else{
+       el.style.color = "red";
+     }
+  });
+});
+</scripvar title = "Form - Quiz For Coders";
+
+var questions = [
+		{
+			question: "How to Print to Console in js?",
+			answer: "console.log()"
+		},
+		{
+			question: "Which Statement is used in js to define function in js?",
+			answer: "function"
+		},
+		{
+			question: "How add item to list in js?",
+			answer: "push()"
+		},
+		{
+			question: "Which element is used to set the title of a webpage? (Give Syntax)",
+			answer: "<title></title>"
+		},
+		{
+			question: "Which Css Function is used to obtain css variables?",
+			answer: "var()"
+		},
+		
+];
+
+const Main = document.querySelector(".Main");
+Main.querySelector(".📌").innerText = title;
+
+questions.forEach(q => {
+   var QuestionDiv = document.createElement("div");
+   QuestionDiv.innerHTML = `
+      <h4>Q: ${q.question}</h4>
+       <br><input placeholder='Answer Here' spellcheck='false' autocomplete='false'><hr><br>
+   `;
+  Main.appendChild(QuestionDiv);
+});
+
+document.querySelectorAll("input").forEach((el, i) => {
+  el.addEventListener("change", () => {
+    console.log(questions[i].answer);
+     if(el.value ===  questions[i].answer){
+       el.style.color = "lightgreen";
+     }else{
+       el.style.color = "red";
+     }
+  });
+});t>
